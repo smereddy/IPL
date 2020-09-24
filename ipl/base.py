@@ -5,7 +5,7 @@ class web:
 
     def __init__(self, url=None):
         self.base_url = 'https://www.sportskeeda.com'
-        self.ipl_url = self.base_url + '/go/ipl?page=1'
+        self.ipl_url = self.base_url + '/fantasy-cricket-mantra?page=1'
 
     def read(self, url):
         s = requests.Session()
