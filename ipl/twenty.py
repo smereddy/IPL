@@ -22,7 +22,8 @@ def selection(response):
     feq = collections.defaultdict(int)
 
     for player in players:
-        feq[player] += 1
+        if "" != player:
+            feq[player] += 1
 
     return {k: v for k, v in sorted(feq.items(), key=lambda item: item[1], reverse=True)}
 
