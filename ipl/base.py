@@ -29,7 +29,7 @@ class web:
 
             for link in links:
                 try:
-                    if "dream11-team-prediction-fantasy" in link.get("href"):
+                    if "ipl-dream11-team-prediction-fantasy-cricket" in link.get("href"):
                         url = link.get("href")
                         break
                 except:
