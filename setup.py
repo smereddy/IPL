@@ -14,7 +14,7 @@ setuptools.setup(
     url="https://medium.com/@surya.mereddy",
     license="MIT",
     platforms=["Linux", "Windows"],
-    packages=["2020"],
+    packages=["ipl"],
     classifiers=[
         "Intended Audience :: Developers",
         "Natural Language :: English",

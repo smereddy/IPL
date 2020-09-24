@@ -3,7 +3,7 @@ import re
 
 from bs4 import BeautifulSoup
 
-from base import web
+from ipl.base import web
 
 
 def selection(response):
