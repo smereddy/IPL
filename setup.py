@@ -24,4 +24,8 @@ setuptools.setup(
         "Programming Language :: Python :: 3.8",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
+    install_requires=[
+        'beautifulsoup4',
+        'requests',
+    ],
 )
