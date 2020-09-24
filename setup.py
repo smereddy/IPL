@@ -3,10 +3,11 @@ Package setup
 """
 
 import setuptools  # type: ignore
+import ipl
 
 setuptools.setup(
     name="IPL",
-    version=2020,
+    version=ipl.version,
     author="Surya Mereddy",
     author_email="suryamereddy@gmail.com",
     description="Recommend Fantasy 11",
