@@ -40,6 +40,6 @@ def fantasy():
     if playing_xi_url:
         resp, status = playing_xi.read(playing_xi.base_url + playing_xi_url)
         if status:
-            selection(resp)
+            return selection(resp)
         else:
             return 'Please check again later'
