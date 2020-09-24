@@ -24,7 +24,7 @@ def selection(response):
     for player in players:
         feq[player] += 1
 
-    print({k: v for k, v in sorted(feq.items(), key=lambda item: item[1], reverse=True)})
+    return {k: v for k, v in sorted(feq.items(), key=lambda item: item[1], reverse=True)}
 
 
 def cleanup(string):
@@ -42,4 +42,4 @@ def fantasy():
         if status:
             selection(resp)
         else:
-            print('Please check again later')
+            return 'Please check again later'

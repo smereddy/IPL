@@ -23,7 +23,6 @@ class web:
         # http_respone 200 means OK status
         url = None
         if resp.status_code == 200:
-            print("Successfully opened the web page")
             # we need a parser,Python built-in HTML parser is enough .
             soup = BeautifulSoup(resp.text, 'html.parser')
             links = soup.find_all("a")
@@ -36,6 +35,6 @@ class web:
                 except:
                     pass
         else:
-            print("Error")
+            return "Error"
 
         return url
